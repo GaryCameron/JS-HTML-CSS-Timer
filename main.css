@@ -1,0 +1,214 @@
+@font-face {
+    font-family: digital7;
+    src: url(./Assets/fonts/digital-7.ttf);
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  
+}
+
+#timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 25px;
+    /* border-style: solid;
+    border-color: black;
+    border: 2px; */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.44);
+
+    /* background-color: grey; */
+    /* background-color: rgba(0,0,0,0.25) */
+
+
+    
+    background: rgba(226,226,226,1);
+background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(0%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+ 
+}
+
+
+#userEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin-top: 15px;
+}
+
+.userTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 50%; */
+    align-items: center;
+    margin: 7px;
+    
+    
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+#displays {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    color: white;
+    animation-duration: 1s;
+
+}
+
+#timerDisplay {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: digital-7;
+    font: digital-7;
+    font-size: 3em;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    border: 10px;
+    color: greenyellow;
+    /* background-color: black; */
+    /* background-color: rgba(0,0,0,0.5) */
+}
+
+.transparent{
+    background-color: black;
+    background-color: rgba(0,0,0,0.5)
+}
+
+#endmessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.inputBox{
+    width: 40px;
+    height: 30px;
+    padding-left: 20px;
+    font-size: 1em;
+    /* border-style: solid;
+    border-color: black;
+    border: 2px; */
+    text-align: center;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.inputBox:hover{
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    border: 2px;
+    color: black;
+}
+
+button {
+    height: 52px;
+    width: 70px;
+    margin: 10px;
+    background-color: lightgrey;
+    border: 1.75px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.startButton:hover{
+    background-color: green;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    transform: scale(1.2); 
+    transition-duration: 0.5s;
+}
+
+.stopButton:hover{
+    background-color: red;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    transform: scale(1.2); 
+    transition-duration: 0.5s;
+}
+
+.resetButton:hover{
+    background-color: blue;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    transform: scale(1.2); 
+    transition-duration: 0.5s;
+}
+
+::placeholder{
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+.animTest {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.label{
+    padding-top: 10px;
+}
+
+#timer {
+    animation-duration: 2s;
+    text-align: center;
+}

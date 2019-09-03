@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css"> -->
+
+    <title>Gary's JavaScript Countdown</title>
+</head>
+<body>
+    
+    <div id="container"> 
+    
+    <div id="timer">
+
+        <!-- <div id="title">Timer Started</div> -->
+        <!-- set to be transparent and appear with animation on start -->
+
+        <div id="displays">
+                <div id="timerDisplay" class="timerDisplay transparent"></div>
+                <!-- <div id="endmessage"></div> -->
+            </div>
+
+
+        <div id="userEntry">
+           
+            <div class="userTime">
+               <input type="number" id="hours" class="inputBox" value="" min="0" max="24" placeholder="0-24">
+               <span class="label">Hours</span>
+            </div>
+
+            <div class="userTime">
+                <input type="number" id="minutes" class="inputBox" value="" min="0" max="59" placeholder="0-60">
+                <span class="label">Minutes</span>
+            </div>
+            
+            <div class="userTime">
+                <input type="number" id="seconds" class="inputBox"  value="" min="0" max="59" placeholder="0-60">
+                <span class="label">Seconds</span>
+            </div>
+            
+        </div>
+   
+
+        <div id="buttons">
+                <button id="start" class="startButton" onclick="startFunction()">Start</button>
+                <button class="stopButton" onclick="stopFunction()">Stop</button>
+                <button class="resetButton"  onclick="resetFunction()">Reset</button>   
+        </div>
+
+    </div>
+    <!--  end Timer -->
+
+    </div>
+
+    <script src='main.js'></script>
+
+    <!-- <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p id="demo1"></p> -->
+
+   <!-- <div id="demo1" class="display"> </div> -->
+
+    <!-- <div id="timers">
+        <form id="form1" onsubmit="clicker()">
+
+            <div> 
+                <p>Days</p> <input id="userDays" type="number" name="days" min="0" max="356"><br>
+            </div>
+
+            <div> 
+                <p>Hours</p> <input id="userHours" type="number" name="hours" min="0" max="24"><br>
+            </div>
+
+            <div> 
+                <p>Minutes</p> <input id="userMins" type="number" name="minutes" min="0" max="60"><br>
+            </div>
+
+            <div> 
+                <p>Seconds</p> <input id="userSecs" type="number" name="days" min="0" max="60" value=""><br>
+            </div>
+
+            <div> 
+                <input type="submit" value="Start Timer">
+            </div>
+
+        </form>
+    </div> -->
